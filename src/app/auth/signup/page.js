@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
 
-import Field from "@/components/forms/Field";
-import FormActions from "@/components/forms/FormActions";
+import Field from "../../../components/forms/Field";
+import FormActions from "../../../components/forms/FormActions";
 
 export default function SignupPage() {
   return (

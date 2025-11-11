@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
-import Field from "@/components/forms/Field";
+import Field from "../../../components/forms/Field";
 import FormActions from "../../../components/forms/FormActions";
 
 export default function LoginPage() {
