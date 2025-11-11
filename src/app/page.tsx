@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useMemo } from "react";
-import AddNoteModal from "@/components/AddNoteModal";
-import Fab from "@/components/Fab";
+import AddNoteModal from "../components/AddNoteModal";
+import Fab from "../components/Fab";
 
 type Note = {
   id: string;

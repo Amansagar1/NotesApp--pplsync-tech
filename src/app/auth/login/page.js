@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 import Field from "../../../components/forms/Field";
 import FormActions from "../../../components/forms/FormActions";
+import { loginApi } from "../../../Web/ApiControllers";
 
 export default function LoginPage() {
   const [data, setData] = useState({ email: "", password: "" });
@@ -12,10 +13,14 @@ export default function LoginPage() {
     setData({ ...data, [e.target.name]: e.target.value });
   };
 
-  const submit = (e) => {
+  const submit = async (e) => {
     e.preventDefault();
-    if (data.email === "admin@gmail.com" && data.password === "admin") {
+    try {
+      const out = await loginApi(data);
+      document.cookie = `session_token=${out.token}; path=/; samesite=lax`;
       router.push("/");
+    } catch (err) {
+      alert(err?.detail || "Login failed");
     }
   };
 
