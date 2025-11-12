@@ -21,9 +21,11 @@ It allows users to create, edit, and manage notes securely with JWT authenticati
 **DevOps**
 - Docker & Docker Compose
 
-
+##Important
 **Run Full Project In Docker**
+----- --- --- ---
 docker-compose up --build
+--- --- ---- --- -- 
 Frontend → http://127.0.0.1:3000
 Backend → http://127.0.0.1:8000
 
