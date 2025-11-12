@@ -1,4 +1,6 @@
-# 🗒️ NotesApp (Prep)
+# 🗒️ NotesApp
+
+**Please add env file first**
 
 A full-stack notes management web app built with **Next.js (frontend)** and **FastAPI (backend)**.  
 It allows users to create, edit, and manage notes securely with JWT authentication and MongoDB Atlas as the database.
